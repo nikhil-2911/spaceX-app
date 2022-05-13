@@ -23,7 +23,7 @@ const LaunchPage = () => {
         response.data.details === null
           ? setDetails("No Data")
           : setDetails(response.data.details);
-        setDate(response.data.date_local.substring(0, 11));
+        setDate(response.data.date_local.substring(0, 10));
         response.data.cores[0].reused === true
           ? setReused("True")
           : setReused("False");
